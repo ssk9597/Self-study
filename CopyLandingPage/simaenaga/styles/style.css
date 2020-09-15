@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* modules__read */
+/* --------------------------------- */
+/* color */
+/* --------------------------------- */
+/* breakpoints__read */
+/* --------------------------------- */
+/* mobile */
+/* --------------------------------- */
+/* base */
+/* サイト共通 */
+/* --------------------------------- */
+.container, .header, .top-fv, .top-ability, .top-about, footer {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex, .header, .top-ability-list, .top-about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.font_sm, .sub-text, footer p {
+  font-size: 14px;
+}
+
+.font_md, .sub-title, .top-ability_sub-title, .top-about_sub-title {
+  font-size: 18px;
+}
+
+.font_lr, .main-title {
+  font-size: 24px;
+}
+
+.pb-sm, .main-title, .sub-title, .top-ability_sub-title, .top-about_sub-title, .top-ability-item img, .top-about .sub-text {
+  padding-bottom: 15px;
+}
+
+.pb-md {
+  padding-bottom: 40px;
+}
+
+.pb-lr {
+  padding-bottom: 60px;
+}
+
+.mb-sm {
+  margin-bottom: 15px;
+}
+
+.mb-md, .main-title, .round-btn {
+  margin-bottom: 40px;
+}
+
+.mb-lr, .top-fv, .top-ability, .top-about {
+  margin-bottom: 60px;
+}
+
+/* modules */
+/* 便利クラス */
+/* --------------------------------- */
+.main-title {
+  border-bottom: 5px solid #51a2bc;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.sub-title, .top-ability_sub-title, .top-about_sub-title {
+  font-weight: 600;
+}
+
+.round-btn {
+  margin-top: 15px;
+}
+
+.round-btn a {
+  padding: 10px 30px;
+  border: 3px solid #51a2bc;
+  border-radius: 25px;
+}
+
+.round-btn a:hover {
+  background-color: #51a2bc;
+  color: #ffffff;
+}
+
+/* header */
+/* --------------------------------- */
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.header-logo img {
+  width: 180px;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-nav-item-a {
+  color: #51a2bc;
+  display: block;
+  padding: 20px;
+}
+
+.header-nav-item-a:hover {
+  background-color: #d5d5d5;
+}
+
+/* top-fv */
+/* --------------------------------- */
+.top-fv {
+  background-image: url(../../images/header.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 90vh;
+}
+
+/* top-ability */
+/* --------------------------------- */
+.top-ability_sub-title {
+  color: #51a2bc;
+}
+
+.top-ability-item:not(:last-child) {
+  padding-bottom: 40px;
+}
+
+/* top-about */
+/* --------------------------------- */
+.top-about_sub-title {
+  color: #555555;
+}
+
+.top-about-img img {
+  max-width: 100%;
+}
+
+/* footer */
+/* --------------------------------- */
+footer {
+  background: #d5d5d5;
+  padding: 19px 0;
+}
+
+footer p {
+  color: #ffffff;
+}
+
+@media (min-width: 480px) {
+  /* 480px以上で適用 */
+  /* --------------------------------- */
+}
+
+@media (min-width: 600px) {
+  /* 600px以上で適用 */
+  /* --------------------------------- */
+}
+
+@media (min-width: 960px) {
+  /* 960px以上で適用 */
+  /* --------------------------------- */
+}
+
+@media (min-width: 1280px) {
+  /* 1280px以上で適用 */
+  /* --------------------------------- */
+  /* base */
+  /* サイト共通 */
+  /* --------------------------------- */
+  .container, .header, .top-fv, .top-ability, .top-about, footer {
+    max-width: 1280px;
+    padding: 0 150px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .flex, .header, .top-ability-list, .top-about-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .font_sm, .sub-text, footer p {
+    font-size: 22px;
+  }
+  .font_md, .sub-title, .top-ability_sub-title, .top-about_sub-title {
+    font-size: 28px;
+  }
+  .font_lr, .main-title {
+    font-size: 36px;
+  }
+  .pb-lr {
+    padding-bottom: 80px;
+  }
+  .mb-lr, .top-fv, .top-ability, .top-about {
+    margin-bottom: 80px;
+  }
+  /* modules */
+  /* 便利クラス */
+  /* --------------------------------- */
+  .round-btn a {
+    padding: 15px 45px;
+  }
+  /* top-fv */
+  /* --------------------------------- */
+  .top-fv {
+    height: 600px;
+  }
+  /* top-ability */
+  /* --------------------------------- */
+  .top-ability-item:not(:last-child) {
+    padding-bottom: 0px;
+  }
+  .top-ability-item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+  /* top-about */
+  /* --------------------------------- */
+  .top-about-message {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .top-about-box {
+    text-align: left;
+  }
+  .top-about .sub-text {
+    padding-bottom: 35px;
+  }
+  .top-about-img {
+    text-align: right;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  /* footer */
+  /* --------------------------------- */
+  footer {
+    padding: 30px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

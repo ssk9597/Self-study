@@ -1,0 +1,94 @@
+/* 1280px以上で適用 */
+/* --------------------------------- */
+
+/* base */
+/* サイト共通 */
+/* --------------------------------- */
+.container {
+  max-width: 1280px;
+  padding: 0 150px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.font_sm {
+  font-size: 22px;
+}
+
+.font_md {
+  font-size: 28px;
+}
+
+.font_lr {
+  font-size: 36px;
+}
+
+.pb-lr {
+  padding-bottom: 80px;
+}
+
+.mb-lr {
+  margin-bottom: 80px;
+}
+
+/* modules */
+/* 便利クラス */
+/* --------------------------------- */
+.round-btn {
+  & a {
+    padding: 15px 45px;
+  }
+}
+
+/* top-fv */
+/* --------------------------------- */
+.top-fv {
+  height: 600px;
+}
+
+/* top-ability */
+/* --------------------------------- */
+.top-ability {
+  &-item:not(:last-child) {
+    padding-bottom: 0px;
+  }
+
+  &-item {
+    flex-basis: 30%;
+  }
+}
+
+/* top-about */
+/* --------------------------------- */
+.top-about {
+  &-message {
+    flex-basis: 50%;
+  }
+
+  &-box {
+    text-align: left;
+  }
+
+  & .sub-text {
+    padding-bottom: 35px;
+  }
+
+  &-img {
+    text-align: right;
+    flex-basis: 50%;
+  }
+}
+
+/* footer */
+/* --------------------------------- */
+footer {
+  padding: 30px 0;
+}

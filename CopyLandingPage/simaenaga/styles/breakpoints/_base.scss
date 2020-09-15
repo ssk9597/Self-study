@@ -1,0 +1,206 @@
+/* mobile */
+/* --------------------------------- */
+
+/* base */
+/* サイト共通 */
+/* --------------------------------- */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.font_sm {
+  font-size: 14px;
+}
+
+.font_md {
+  font-size: 18px;
+}
+
+.font_lr {
+  font-size: 24px;
+}
+
+.pb-sm {
+  padding-bottom: 15px;
+}
+
+.pb-md {
+  padding-bottom: 40px;
+}
+
+.pb-lr {
+  padding-bottom: 60px;
+}
+
+.mb-sm {
+  margin-bottom: 15px;
+}
+
+.mb-md {
+  margin-bottom: 40px;
+}
+
+.mb-lr {
+  margin-bottom: 60px;
+}
+
+/* modules */
+/* 便利クラス */
+/* --------------------------------- */
+.main-title {
+  @extend .font_lr;
+  @extend .pb-sm;
+  @extend .mb-md;
+  border-bottom: 5px solid $txBlue;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.sub-title {
+  @extend .font_md;
+  @extend .pb-sm;
+  font-weight: 600;
+}
+
+.sub-text {
+  @extend .font_sm;
+}
+
+.round-btn {
+  @extend .mb-md;
+  margin-top: 15px;
+
+  & a {
+    padding: 10px 30px;
+    border: 3px solid $txBlue;
+    border-radius: 25px;
+
+    &:hover {
+      background-color: $txBlue;
+      color: $tx_bgWhite;
+    }
+  }
+}
+
+/* header */
+/* --------------------------------- */
+.header {
+  @extend .container;
+  @extend .flex;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: $tx_bgWhite;
+  width: 100%;
+
+  &-logo {
+    & img {
+      width: 180px;
+    }
+  }
+
+  &-nav {
+    &-list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-item {
+      &-a {
+        color: $txBlue;
+        display: block;
+        padding: 20px;
+
+        &:hover {
+          background-color: $bgGray;
+        }
+      }
+    }
+  }
+}
+
+/* top-fv */
+/* --------------------------------- */
+.top-fv {
+  @extend .mb-lr;
+  @extend .container;
+  background-image: url(../../images/header.png);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 90vh;
+}
+
+/* top-ability */
+/* --------------------------------- */
+.top-ability {
+  @extend .container;
+  @extend .mb-lr;
+
+  &_sub-title {
+    @extend .sub-title;
+    color: $txBlue;
+  }
+
+  &-list {
+    @extend .flex;
+  }
+
+  &-item img {
+    @extend .pb-sm;
+  }
+
+  &-item:not(:last-child) {
+    padding-bottom: 40px;
+  }
+}
+
+/* top-about */
+/* --------------------------------- */
+.top-about {
+  @extend .container;
+  @extend .mb-lr;
+
+  &-box {
+    @extend .flex;
+  }
+
+  &_sub-title {
+    @extend .sub-title;
+    color: $txBlack;
+  }
+
+  & .sub-text {
+    @extend .pb-sm;
+  }
+
+  &-img {
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+/* footer */
+/* --------------------------------- */
+footer {
+  @extend .container;
+  background: $bgGray;
+  padding: 19px 0;
+
+  & p {
+    @extend .font_sm;
+    color: $tx_bgWhite;
+  }
+}
