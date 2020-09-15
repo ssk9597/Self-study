@@ -1,0 +1,28 @@
+/* 480px以上で適用 */
+/* --------------------------------- */
+
+/* top-fv */
+/* --------------------------------- */
+.top-fv {
+  &-img {
+    & .other-none {
+      display: none;
+    }
+
+    & .mobile-none {
+      display: block;
+    }
+  }
+}
+
+/* top-background-lead */
+/* --------------------------------- */
+.top-background-lead {
+  background-image: url(../../images/cat_desc_img.jpg);
+  background-size: cover;
+  background-position: center;
+
+  & p {
+    text-align: center;
+  }
+}

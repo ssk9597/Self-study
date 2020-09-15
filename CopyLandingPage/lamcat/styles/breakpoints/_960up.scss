@@ -1,0 +1,254 @@
+/* 960px以上で適用 */
+/* --------------------------------- */
+
+/* base */
+/* サイト共通 */
+/* --------------------------------- */
+.container {
+  padding: 0 80px;
+}
+
+/* modules */
+/* 便利クラス */
+/* --------------------------------- */
+.main-title {
+  padding: 100px 0 70px 0;
+  font-size: 40px;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #ae0009;
+}
+
+.red-btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 35px;
+  color: #ffffff;
+  background-color: #ae0009;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/* header */
+/* --------------------------------- */
+.header {
+  &-logo {
+    & img {
+      width: 100px;
+    }
+  }
+
+  &-nav {
+    &-item {
+      &-a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* top-fv */
+/* --------------------------------- */
+.top-fv {
+  margin-bottom: 100px;
+}
+
+/* top-lead */
+/* --------------------------------- */
+.top-lead {
+  &_bold-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+  &_text {
+    font-size: 20px;
+  }
+}
+
+/* top-cat1 */
+/* --------------------------------- */
+.top-cat1 {
+  background-color: #f6f6f6;
+  padding-bottom: 100px;
+
+  &-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+    margin-bottom: 100px;
+
+    &:nth-child(3n) {
+      flex-direction: row-reverse;
+
+      & .top-cat1-flex-img {
+        flex-basis: calc(50% - 25px);
+        margin-left: 25px;
+        margin-right: 0;
+      }
+
+      & .top-cat1-flex-text {
+        flex-basis: calc(50% - 25px);
+        margin-right: 25px;
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &-img {
+      flex-basis: calc(50% - 25px);
+      margin-right: 25px;
+    }
+
+    & img {
+      margin-bottom: 0px;
+    }
+
+    &-text {
+      flex-basis: calc(50% - 25px);
+      margin-left: 25px;
+      font-size: 16px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+/* top-cat2 */
+/* --------------------------------- */
+.top-cat2 {
+  padding-bottom: 130px;
+
+  &-list {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  &-item {
+    margin-right: 40px;
+    flex-basis: 33%;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    & img {
+      margin-bottom: 20px;
+    }
+
+    & p {
+      display: inline-block;
+      margin-bottom: 50px;
+      width: auto;
+      text-align: left;
+    }
+  }
+}
+
+/* top-background-lead */
+/* --------------------------------- */
+.top-background-lead {
+  padding: 100px 0;
+
+  & p {
+    transform: translate(50%, 0%);
+    font-size: 18px;
+    line-height: 31px;
+    text-align: left;
+
+    &:nth-child(2n-1) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* top-news */
+/* --------------------------------- */
+.top-news {
+  margin-bottom: 100px;
+
+  &-item {
+    display: flex;
+    text-align: left;
+    padding: 15px 0;
+    border-top: 1px solid #707070;
+
+    &:last-child {
+      border-bottom: 1px solid #707070;
+    }
+
+    &-box {
+      margin-bottom: 0px;
+    }
+
+    &-day {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333333;
+      padding-right: 16px;
+    }
+
+    &-new {
+      color: #ae0009;
+      border: 1px solid #ae0009;
+      padding: 5px 26px;
+      margin-right: 36px;
+    }
+
+    &-text {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/* top-info */
+/* --------------------------------- */
+.top-info {
+  background: #afafaf;
+  color: #ffffff;
+  padding: 70px 0;
+
+  &-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &-box {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    flex-basis: 33%;
+
+    &:not(:last-child) {
+      padding-bottom: 0px;
+      margin-right: 40px;
+    }
+
+    & li:not(:last-child) {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+/* footer */
+/* --------------------------------- */
+footer {
+  background: #797979;
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  padding: 19px 0;
+}
