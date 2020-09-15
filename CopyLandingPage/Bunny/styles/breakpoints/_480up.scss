@@ -1,0 +1,19 @@
+// /* 480px以上で適用 */
+// /* --------------------------------- */
+
+/* top-contact */
+/* --------------------------------- */
+.top-contact {
+  &-wrap {
+    margin-bottom: 26px;
+
+    & input,
+    textarea {
+      margin: 0 auto;
+    }
+
+    &-form {
+      text-align: center;
+    }
+  }
+}
