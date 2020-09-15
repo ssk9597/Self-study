@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="val"></div>
+    <input type="text" />
+    <div class="add">追加する</div>
+
+    <script>
+      const add = document.querySelector(".add");
+      add.addEventListener("click", () => {
+        const input = document.querySelector("input");
+        const val = document.querySelector(".val");
+        val.innerHTML = input.value;
+      });
+    </script>
+  </body>
+</html>

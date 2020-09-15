@@ -1,0 +1,13 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.out {
+  animation: fadeOut 2s;
+  animation-fill-mode: both;
+}

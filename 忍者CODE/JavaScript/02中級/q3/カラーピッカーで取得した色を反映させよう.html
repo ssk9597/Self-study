@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .title {
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3",
+          "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        text-align: center;
+        margin-top: 300px;
+        font-size: 100px;
+      }
+      #color-change {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">忍者CODE</h1>
+    <input type="color" id="color-change" />
+
+    <script>
+      const colorChange = document.getElementById("color-change");
+      colorChange.addEventListener("change", () => {
+        const h1 = document.querySelector("h1");
+        h1.style.color = colorChange.value;
+      });
+    </script>
+  </body>
+</html>

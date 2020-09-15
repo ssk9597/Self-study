@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="q18.css" />
+  </head>
+  <body>
+    <div class="trigger" style="margin-bottom: 30px">クリックしてください</div>
+    <div class="target" style="display: none">文字がふわっと現れるよ！</div>
+
+    <script>
+      const trigger = document.querySelector(".trigger");
+
+      trigger.addEventListener("click", () => {
+        const target = document.querySelector(".target");
+        target.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

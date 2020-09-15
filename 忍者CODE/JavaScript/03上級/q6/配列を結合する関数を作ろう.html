@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let my_array = ["忍者", "CO", "DE"];
+      let my_array = [2, 3, 4];
+
+      const judge = (my_array) => {
+        const sum = my_array.reduce((a, b) => {
+          return a + b;
+        });
+
+        alert(sum);
+      };
+
+      judge(my_array);
+    </script>
+  </body>
+</html>

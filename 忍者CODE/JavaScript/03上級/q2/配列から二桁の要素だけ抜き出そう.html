@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let ninja = [2, 34, 561, 5, 14];
+      let futaketa = [];
+
+      for (let i = 0; i < ninja.length; i++) {
+        //2桁の時でif
+        if (String(ninja[i]).length === 2) {
+          //futaketaに代入
+          futaketa.push(ninja[i]);
+        }
+      }
+
+      alert(futaketa);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+      .list {
+        width: 1000px;
+        margin: 300px auto 0 auto;
+        overflow: hidden;
+      }
+      .list li {
+        width: 300px;
+        float: left;
+        padding: 20px;
+        background-color: pink;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li>これは忍者CODEの問題です。</li>
+      <li>
+        これは忍者CODEの問題です。
+        これは忍者CODEの問題です。これは忍者CODEの問題です。
+        これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。
+        これは忍者CODEの問題です。
+      </li>
+      <li>
+        これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。
+      </li>
+    </ul>
+
+    <script>
+      const ul = document.querySelector("ul");
+
+      const li = document.querySelectorAll("li");
+      for (let i = 0; i < li.length; i++) {
+        li[i].style.height = ul.clientHeight + "px";
+      }
+    </script>
+  </body>
+</html>

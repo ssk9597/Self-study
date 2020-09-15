@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .blue {
+        color: blue;
+      }
+      #red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="idDel">idを削除</div>
+    <div class="classDel">classを削除</div>
+    <div id="red" class="blue">忍者CODE</div>
+
+    <script>
+      const classDel = document.querySelector(".classDel");
+      classDel.addEventListener("click", () => {
+        const div = document.querySelector(".blue");
+        div.classList.remove("blue");
+      });
+
+      const idDel = document.querySelector(".idDel");
+      idDel.addEventListener("click", () => {
+        const div = document.querySelector("#red");
+        div.removeAttribute("id");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .x-scroll {
+        width: 200px;
+        padding: 30px 30px;
+        background-color: gray;
+        overflow-x: scroll;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-val">0</div>
+    <div class="x-scroll">
+      忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者CODE忍者
+    </div>
+
+    <script>
+      const xScroll = document.querySelector(".x-scroll");
+
+      xScroll.addEventListener("scroll", () => {
+        let observe = xScroll.scrollLeft;
+
+        const scrollVar = document.querySelector(".scroll-val");
+        scrollVar.innerHTML = observe;
+      });
+    </script>
+  </body>
+</html>

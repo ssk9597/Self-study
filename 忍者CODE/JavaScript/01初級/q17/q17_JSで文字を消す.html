@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="trigger" style="margin-bottom: 30px">クリックしてください</div>
+    <div class="target">文字が消えます！</div>
+
+    <script>
+      const trigger = document.querySelector(".trigger");
+
+      trigger.addEventListener("click", () => {
+        const target = document.querySelector(".target");
+        target.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

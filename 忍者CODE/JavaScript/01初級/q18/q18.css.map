@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,UAAU,CAAV,MAAU;EACR,EAAE;IACA,OAAO,EAAE,CAAC;;EAEZ,IAAI;IACF,OAAO,EAAE,CAAC;;;;AAId,AAAA,OAAO,CAAC;EACN,SAAS,EAAE,SAAS;EACpB,mBAAmB,EAAE,IAAI;CAC1B",
+    "sources": [
+        "q18.scss"
+    ],
+    "names": [],
+    "file": "q18.css"
+}

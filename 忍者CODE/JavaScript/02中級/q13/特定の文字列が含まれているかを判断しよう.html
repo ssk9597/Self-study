@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      target_str = "忍者CODE";
+
+      const ninja_judge = (str) => {
+        if (str.indexOf(target_str) != -1) {
+          alert(str + "は含まれる");
+        }
+      };
+
+      ninja_judge("アイウエオ");
+      ninja_judge("忍者CODE");
+      ninja_judge("忍者コード");
+      ninja_judge("おはよう忍者CODE");
+    </script>
+  </body>
+</html>

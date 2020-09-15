@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="target">
+      <p>ダミーテキストB</p>
+      <p>ダミーテキストC</p>
+      <p>ダミーテキストD</p>
+      <p>ダミーテキストE</p>
+      <p>ダミーテキストF</p>
+    </div>
+
+    <script>
+      const div = document.querySelector("div");
+
+      const p = document.createElement("p");
+      console.log(p);
+      p.textContent = "ダミーテキストA";
+      div.insertBefore(p, div.firstChild);
+    </script>
+  </body>
+</html>

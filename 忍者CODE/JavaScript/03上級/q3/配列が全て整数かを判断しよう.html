@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let ninja = ["5", 6, "3"];
+      let code = [5, 6, 3];
+
+      const judge = ninja.every((item) => {
+        return typeof item == "number";
+      });
+
+      alert(judge);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        width: 1000px;
+        margin: 0 auto 0 auto;
+        display: flex;
+        list-style: none;
+      }
+      li {
+        height: 100px;
+        width: 100px;
+        background-color: #1d4177;
+        margin-right: 10px;
+      }
+      li:nth-child(1) {
+        background-color: rgb(0, 0, 255);
+      }
+      li:nth-child(2) {
+        background-color: rgb(0, 0, 255);
+      }
+      li:nth-child(3) {
+        background-color: rgb(255, 0, 0);
+      }
+      li:nth-child(4) {
+        background-color: rgb(0, 0, 255);
+      }
+      li:nth-child(5) {
+        background-color: rgb(0, 0, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script>
+      const li = document.querySelectorAll("li");
+
+      for (let i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", () => {
+          li[i].style.backgroundColor = "blue";
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="target">
+      <p>ダミーテキストA</p>
+      <p>ダミーテキストB</p>
+      <p>ダミーテキストC</p>
+      <p>ダミーテキストD</p>
+      <p>ダミーテキストE</p>
+    </div>
+    <script>
+      const arry = ["F", "G", "H", "I", "J"];
+      const div = document.querySelector("div");
+
+      for (let i = 0; i < arry.length; i++) {
+        const p = document.createElement("p");
+        p.textContent = "ダミーテキスト" + arry[i];
+        div.appendChild(p);
+      }
+    </script>
+  </body>
+</html>
